@@ -250,6 +250,7 @@ class InputFeatures(object):
 
 class UDCProcessor(DataProcessor): 
     """Processor for the UDC data set."""
+    """Ubuntu Dialogue Corpus"""
     def _create_examples(self, lines, set_type): 
         """Creates examples for the training and dev sets."""
         examples = []
@@ -336,6 +337,7 @@ class SWDAProcessor(DataProcessor):
 
 class MRDAProcessor(DataProcessor): 
     """Processor for the MRDA data set."""
+    """Meeting Recorder Dialogue Act"""
     def _create_examples(self, lines, set_type): 
         """Creates examples for the training and dev sets."""
         examples = create_multi_turn_examples(lines, set_type)

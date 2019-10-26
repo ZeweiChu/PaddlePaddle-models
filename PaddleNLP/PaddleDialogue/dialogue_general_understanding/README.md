@@ -32,7 +32,7 @@
 
 ```
 git clone https://github.com/PaddlePaddle/models.git
-cd models/PaddleNLP/dialogue_model_toolkit/dialogue_general_understanding
+cd PaddlePaddle-models/PaddleNLP/PaddleDialogue/dialogue_general_understanding
 ```
 
 ### 任务简介
@@ -75,7 +75,7 @@ python dgu/prepare_data_and_model.py
 &ensp;&ensp;&ensp;&ensp;下载的数据集中已提供了训练集，测试集和验证集，用户如果需要重新生成某任务数据集的训练数据，可执行：
 
 ```
-cd dgu/scripts && bash run_build_data.sh task_name
+cd dgu/scripts && python run_build_data.py task_name
 参数说明：
 task_name: udc, swda, mrda, atis, dstc2,  选择5个数据集选项中用户需要生成的数据名
 

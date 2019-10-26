@@ -127,7 +127,7 @@ class EvalATISSlot(object):
         refer_label = []
         fr = io.open(self.refer_file, 'r', encoding="utf8")
         for line in fr: 
-            labels = line.rstrip('\n').split('\t')[1].split()
+            labels = line.rstrip('\n').split('\t')[1][2:-1].split()
             labels = [int(l) for l in labels]
             refer_label.append(labels)
         fr = io.open(self.pred_file, 'r', encoding="utf8")
